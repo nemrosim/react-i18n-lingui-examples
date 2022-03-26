@@ -21,8 +21,6 @@ export const I18nProvider: React.FC = ({ children }) => {
 
             const messages = module.messages;
 
-            console.log('Messages', messages)
-
             i18n.load(locale, messages)
             i18n.activate(locale)
         });
