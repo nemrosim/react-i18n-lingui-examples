@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/App.tsx:20
+#: src/App.tsx:21
 msgid "Edit <0>src/App.tsx</0> and save to reload."
 msgstr "Edit <0>src/App.tsx</0> and save to reload."
 
@@ -31,3 +31,8 @@ msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel e
 #: src/components/JSXMacros.tsx:35
 msgid "no-sense-message"
 msgstr "A message that makes no sense. Value: {priceForProduct}"
+
+#: src/components/Plurals.tsx:10
+#: src/components/Plurals.tsx:21
+msgid "{amount, plural, one {You got {amount} item (one)} many {You got {amount} items (many)} other {You got {amount} items (other)}}"
+msgstr "{amount, plural, one {You got {amount} item (one)} many {You got {amount} items (many)} other {You got {amount} items (other)}}"

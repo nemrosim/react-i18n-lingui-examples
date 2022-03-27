@@ -3,6 +3,7 @@ import './App.css';
 import { Trans } from "@lingui/macro";
 import { LocaleEnum, useI18nContext } from "./providers";
 import { Paragraph,JSXMacros } from "./components";
+import { JSXPlurals } from "./components/Plurals";
 
 export const App: React.FC = () => {
    const { locale, setLocale } = useI18nContext();
@@ -19,8 +20,7 @@ export const App: React.FC = () => {
            <p>
               <Trans>Edit <code>src/App.tsx</code> and save to reload.</Trans>
            </p>
-           <JSXMacros isUppercase={true}/>
-           <Paragraph/>
+           <JSXPlurals/>
            <a
              className="App-link"
              href="https://reactjs.org"

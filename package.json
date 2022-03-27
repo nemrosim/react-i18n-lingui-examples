@@ -23,7 +23,8 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "extract": "lingui extract --clean",
-        "compile": "lingui compile"
+        "compile": "lingui compile",
+        "prepare": "husky install"
     },
     "eslintConfig": {
         "extends": [
@@ -45,6 +46,8 @@
     },
     "devDependencies": {
         "@lingui/cli": "^3.13.2",
-        "@lingui/macro": "^3.13.2"
+        "@lingui/macro": "^3.13.2",
+        "husky": "^7.0.0",
+        "lint-staged": "^12.3.7"
     }
 }
