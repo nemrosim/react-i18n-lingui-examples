@@ -17,7 +17,7 @@ export const JSXPlurals: React.FC = () => {
      <>
         {amountList.map((amount) => {
            return (
-             <p>
+             <p key={amount} style={{margin: 0}}>
                 <Plural
                   value={amount}
                   one='You got {amount} item (one)'

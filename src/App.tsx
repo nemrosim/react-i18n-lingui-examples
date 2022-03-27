@@ -6,13 +6,13 @@ import { Paragraph,JSXMacros } from "./components";
 import { JSXPlurals } from "./components/Plurals";
 
 export const App: React.FC = () => {
-   const { locale, setLocale } = useI18nContext();
+   const { locale, handleChangeLocale } = useI18nContext();
 
    return (
      <div className="App">
         <header className="App-header">
            <select value={locale} onChange={(e) => {
-              setLocale(e.target.value as LocaleEnum)
+               handleChangeLocale(e.target.value as LocaleEnum)
            }}>
               <option value={LocaleEnum.English}>English</option>
               <option value={LocaleEnum.French}>French</option>
@@ -20,7 +20,9 @@ export const App: React.FC = () => {
            <p>
               <Trans>Edit <code>src/App.tsx</code> and save to reload.</Trans>
            </p>
-           <JSXPlurals/>
+            <JSXMacros isUppercase={true}/>
+            <Paragraph/>
+            <JSXPlurals/>
            <a
              className="App-link"
              href="https://reactjs.org"
