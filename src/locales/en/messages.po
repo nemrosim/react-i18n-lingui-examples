@@ -17,7 +17,7 @@ msgstr ""
 msgid "Edit <0>src/App.tsx</0> and save to reload."
 msgstr "Edit <0>src/App.tsx</0> and save to reload."
 
-#: src/App.tsx:30
+#: src/App.tsx:32
 msgid "Learn React"
 msgstr "Learn React"
 
